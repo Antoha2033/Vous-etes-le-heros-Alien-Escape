@@ -38,37 +38,20 @@ let chapterObj = {
   Upthestairs: {
       subtitle:"clé",
       img:"",
-      text:"Vous trouvez une clé. Devant vous se trouve l'ancienne infirmerie et un petit passage par les bouches d'aération.",
+      text:"Vous trouvez une clé.",
     
       options:[{
-        text:"Passer par les bouches d'aération",
-        action:"goToChapter('Vents')",
-    }, {
-        text:"Passer par le Medbay",
-        action:"goToChapter('Medbay')",
-      }],
+        text:"Continuer en haut des escaliers",
+        action:"goToChapter('MedbayorVents')",
+    },],
   },
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  Upthestairs: {
-    subtitle:"clé",
+
+
+
+  MedbayorVents: {
+    subtitle:"Medbay ou bouches d'aération",
     img:"",
-    text:"Vous trouvez une clé. Devant vous se trouve l'ancienne infirmerie et un petit passage par les bouches d'aération.",
+    text:"Devant vous se trouve l'ancienne infirmerie et un petit passage par les bouches d'aération.",
   
     options:[{
       text:"Passer par les bouches d'aération",
@@ -81,15 +64,64 @@ let chapterObj = {
   
   
   
- 
+  TheCorridor: {
+    subtitle:"Corridor",
+    img:"",
+    text:"Après avoir traversé le long couloir, vous arrivez dans une zone lumineuse, avant de vous en rendre compte, toute la station a commencé à trembler. Si vous courez jusqu’au bout du tunnel, allez plus lentement ou préparez-vous.",
+  
+    options:[{
+        text:"Courir",
+        action:"goToChapter('Run')",
+    }, {
+        text:"marche doucement",
+        action:"goToChapter('RunSlow')",
+    }, {
+        text:"Préparez vous",
+        action:"goToChapter('Brace')",
+      }],
+},
+  
+  
+  
+Run:{
+    subtitle:"GAMEOVER",
+    img:"",
+    text:"GAMEOVER",
+    
+    options:[{
+      text:"GAMEOVER",
+      action:"goToChapter('START')",
+    }],
+},
 
 
 
+Brace: {
+    subtitle:"Préparez vous",
+    img:"",
+    text:"Après vous être barricadé et avoir attendu la fin du remembrement de la station, cela se terminera aussi vite qu'il a commencé, vous décidez de continuer vers le bout du couloir. En passant devant un atelier, vous trouvez un vieux pied de biche.",
+  
+    options:[{
+      text:"Continuez dans le couloir",
+      action:"goToChapter('EscapePodRoom')",
+  },],
+},
 
 
 
-
-
+RunSlow: {
+    subtitle:"Medbay ou bouches d'aération",
+    img:"",
+    text:"Devant vous se trouve l'ancienne infirmerie et un petit passage par les bouches d'aération.",
+  
+    options:[{
+      text:"Passer par les bouches d'aération",
+      action:"goToChapter('Vents')",
+  }, {
+      text:"Passer par le Medbay",
+      action:"goToChapter('Medbay')",
+    }],
+},
 
 
 
