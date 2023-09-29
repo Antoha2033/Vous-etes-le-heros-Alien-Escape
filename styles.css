@@ -1,7 +1,4 @@
-@font-face {
-  font-family: Orbitron;
-  src: url(./font/Orbitron/Orbitron-VariableFont_wght.ttf) format(truetype);
-}
+
 
 :root {
   --background: #344E41;
@@ -13,7 +10,7 @@
 }
 
 body {
-  font-family: Orbitron;
+ 
   display: flex;
   background-color: var(--background);
   height: 100vh;
