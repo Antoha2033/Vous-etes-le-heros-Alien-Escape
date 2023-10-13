@@ -6,7 +6,7 @@ const gameData = {
 const chapters = {
   start: {
     subtitle: "Début",
-    img: "./assets/images/schema.png",
+    img: "./assets/images/img1.png",
     text: "Vous vous réveillez à l'intérieur d'un vieux cryopode rouillé, après avoir quitté la chambre d'égalité décrépite pour trouver une étoile qui monte et descend, et un couloir sombre avec une faible lumière au bout.",
     options: [
       {
