@@ -5,7 +5,19 @@
   --bouton: #248277;
   --bouton_hover: #56AB91;
   --police-bouton: #99E2B4;
+
+  --bouton2_hover: #e76f51;
+  --bouton2: #e9c46a;
 }
+
+h1,
+h2,
+p {
+  color: var(--police);
+  font-size: 3rem;
+  font-family: 'YourFont', sans-serif;
+}
+
 
 body {
   font-size: 22px;
@@ -53,12 +65,7 @@ p {
   margin-bottom: 30px;
 }
 
-img {
-  display: flex;
-  width: 80%;
-  max-width: 100%;
-  margin: 20px;
-}
+
 
 #button-container {
   display: flex;
@@ -72,11 +79,11 @@ img {
 button {
   background-color: var(--bouton);
   color: var(--police-bouton);
-  font-size: 20px; 
-  padding: 10px 10px; 
+  font-size: 20px;
+  padding: 10px 10px;
   border: none;
   border-radius: 5px;
-   cursor: pointer;
+  cursor: pointer;
   transition: background-color 0.3s ease;
   margin: 10px 10px;
 }
@@ -85,6 +92,36 @@ button:hover {
   background-color: var(--bouton_hover);
 }
 
+#resetButton {
+  background-color: var(--bouton2);
+  color: var(--police);
+  font-size: 20px;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px 10px;
+}
+
+#resetButton:hover {
+  background-color: var(--bouton2_hover);
+}
+
 .logo {
   font-size: 36px;
+}
+
+#media {
+  position: relative;
+}
+
+#media img,
+#media video {
+  width: 100%;
+  height: auto;
+  display: flex;
+  width: 93%;
+  max-width: 100%;
+  margin: 20px;
 }

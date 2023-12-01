@@ -3,16 +3,27 @@
 
 <head>
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=YourFont&display=swap" rel="stylesheet">
+  <meta name="author" content="Anton Nikulin"> 
 </head>
 
 <body>
   <div class="container">
     <div id="jeu">
-      <div id="background"></div>
-      <img id="image" src="" alt="">
+
+      <audio id="ambience" autoplay loop>
+      <source src="./assets/sons/ambience.mp3" type="audio/mp3">
+      </audio>
+      
+      
+      <div id="media"></div>
       <div id="story"></div>
       <div id="options"></div>
+
+      <button id="resetButton">Réinitialiser</button>
+      
       <script src="./assets/js/script.js"></script>
+    
     </div>
   </div>
 </body>
